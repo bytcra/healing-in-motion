@@ -27,6 +27,16 @@ AOS.init({
     };
     fullHeight();
 
+    var HeightForSection = function () {
+
+        $('.js-fullheight2').css('height', $(window).height() * 0.6);
+        $(window).resize(function () {
+            $('.js-fullheight2').css('height', $(window).height() * 0.6);
+        });
+
+    };
+    fullHeight();
+
     // loader
     var loader = function () {
         setTimeout(function () {
